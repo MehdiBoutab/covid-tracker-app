@@ -26,8 +26,8 @@
 <script>
 import DataTitle from "@/components/DataTitle";
 import DataBoxes from "@/components/DataBoxes";
-
 import CountrySelect from "@/components/CountrySelect";
+
 const API_URL = "https://api.covid19api.com/summary";
 export default {
   name: "Home",
@@ -61,6 +61,7 @@ export default {
       const data = await this.fetchCovidData();
       this.titre = "Global";
       this.state = data.Global;
+      console.log(this.state);
       this.loading = false;
     },
   },

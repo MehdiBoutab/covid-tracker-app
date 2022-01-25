@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-#!/usr/bin/env sh
-
 # abort on errors
 set -e
 
